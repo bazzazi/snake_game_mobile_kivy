@@ -1,3 +1,8 @@
+# Copyright of Mohammad Ali Bazzazi, 2021 ©
+# https://www.youtube.com/channel/UCeLKoNs3c72Vc-OG3uNQxGw?sub_confirmation=1
+
+################## START ##################
+
 #:import random random
 <SnakePart>
     size:(40,40)
@@ -25,10 +30,18 @@ GameScreen:
                 pos:self.pos
                 size:self.size
                 radius:[50]
-    Label:
-        text:"Score: 0"
-        font_size:25
-        id:score_label
-        pos:(20, root.height-self.height)
-        color:0,0,0,1
+    GridLayout:
+        rows:2
+        Label:
+            text:"Mohammad Ali Bazzazi"
+            font_size:25
+            pos:(20, root.height-self.height)
+            color:0,0,0,1
+        Label:
+            text:"Score: 0"
+            font_size:25
+            id:score_label
+            pos:(20, root.height-self.height)
+            color:0,0,0,1
         bold:1
+################## END ##################
