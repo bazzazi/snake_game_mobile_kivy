@@ -111,7 +111,7 @@ class GameScreen(Widget):
             self.score += 1
             self.ids.score_label.text = "Score: " + str(self.score)
             food.x = randint(0, Window.width - food.width)
-            food.y = randint(0, Window.height - food.height)
+            food.y = randint(0, Window.height - food.height - 110)
             new_part = SnakePart()
             new_part.x = last_x
             new_part.y = last_y
@@ -134,4 +134,5 @@ class mainApp(App):
 
 if __name__ == "__main__":
     mainApp().run()
+
 ################## END ##################
