@@ -30,18 +30,29 @@ GameScreen:
                 pos:self.pos
                 size:self.size
                 radius:[50]
-    GridLayout:
-        rows:2
-        Label:
-            text:"Mohammad Ali Bazzazi"
-            font_size:25
-            pos:(20, root.height-self.height)
-            color:0,0,0,1
-        Label:
-            text:"Score: 0"
-            font_size:25
-            id:score_label
-            pos:(20, root.height-self.height)
-            color:0,0,0,1
+
+    Label:
+        pos:(20, root.height-self.height)
+        text:"Score: 0"
+        font_size:25
+        id:score_label
+        color:0,0,0,1
         bold:1
+    GridLayout:
+        padding:20
+        pos:(root.width-self.width,root.height-self.height)
+        spacing:20
+        size:(150,60)
+        cols:2
+        Label:
+            text:"Bazzazi"
+            color:0,0,0,1
+            bold:1
+            font_size:20
+        AsyncImage:
+            source:'https://avatars.githubusercontent.com/u/81759694?v=4'
+            size_hint:None,None
+            size:(50,50)
+
+
 ################## END ##################
