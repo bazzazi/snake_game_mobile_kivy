@@ -3,7 +3,13 @@
 
 ################## START ##################
 
+# Copyright of Mohammad Ali Bazzazi, 2021 ©
+# https://www.youtube.com/channel/UCeLKoNs3c72Vc-OG3uNQxGw?sub_confirmation=1
+
+################## START ##################
+
 #:import random random
+#:import webbrowser webbrowser
 <SnakePart>
     size:(40,40)
     canvas.before:
@@ -38,21 +44,36 @@ GameScreen:
         id:score_label
         color:0,0,0,1
         bold:1
-    GridLayout:
-        padding:20
-        pos:(root.width-self.width,root.height-self.height)
+    BoxLayout:
+        orientation:"horizontal"
+        pos:(root.width-self.width,root.height-self.height-10)
         spacing:20
-        size:(150,60)
-        cols:2
+        padding:10
+        size:250,70
         Label:
-            text:"Bazzazi"
-            color:0,0,0,1
+            text:''
+        Button:
+            background_color:0,0,0,0
+            background_normal:""
+            canvas.before:
+                Color:
+                    rgb:200/255,0,0
+                RoundedRectangle:
+                    pos:self.pos
+                    size:self.size
+                    radius:[2]
+            size_hint:None,None
+            size:'120dp','35dp'
+            text:"SUBSCRIBE"
             bold:1
-            font_size:20
+            color:1,1,1,1
+            on_release:webbrowser.open("https://www.youtube.com/channel/UCeLKoNs3c72Vc-OG3uNQxGw?sub_confirmation=1")
         AsyncImage:
             source:'https://avatars.githubusercontent.com/u/81759694?v=4'
             size_hint:None,None
-            size:(50,50)
+            size:('40dp','40dp')
 
+
+################## END ##################
 
 ################## END ##################
