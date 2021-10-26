@@ -1,0 +1,34 @@
+#:import random random
+<SnakePart>
+    size:(40,40)
+    canvas.before:
+        Color:
+            rgb:random.random(),random.random(),random.random()
+        Rectangle:
+            pos:self.pos
+            size:self.size
+GameScreen:
+    canvas.before:
+        Color:
+            rgb:1,1,1
+        Rectangle:
+            pos:self.pos
+            size:self.size
+    Widget:
+        size:(40,40)
+        pos:(120,120)
+        id:food
+        canvas.before:
+            Color:
+                rgb:random.random(),random.random(),random.random()
+            RoundedRectangle:
+                pos:self.pos
+                size:self.size
+                radius:[50]
+    Label:
+        text:"Score: 0"
+        font_size:25
+        id:score_label
+        pos:(20, root.height-self.height)
+        color:0,0,0,1
+        bold:1
