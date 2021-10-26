@@ -1,3 +1,27 @@
+# Add sound to mouse click
+# Developer: Mohammad Ali Bazzazi (me)
+
+print("""
+_______________     __________   _______   _______    _________   _______    #
+|              \   |          |        /         /   |         |        /   
+|               |  |          |       /         /    |         |       /     |
+|              /   |          |      /         /     |         |      /      |
+|_____________|    |__________|     /         /      |_________|     /       |
+|              \   |          |    /         /       |         |    /        |
+|               |  |          |   /         /        |         |   /         |
+|              /   |          |  /         /         |         |  /          |
+|_____________/    |          | /_______  /_______   |         | /______     |
+""")
+print("*********************************************************************************")
+print("*"+" "*79+"*")
+print("*  Copyright of Mohammad Ali Bazzazi, 2021 ©                                    *")
+print("*"+" "*79+"*")
+print("*  https://www.youtube.com/channel/UCeLKoNs3c72Vc-OG3uNQxGw?sub_confirmation=1  *")
+print("*"+" "*79+"*")
+print("*********************************************************************************")
+
+################## START ##################
+
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.clock import Clock
@@ -110,3 +134,4 @@ class mainApp(App):
 
 if __name__ == "__main__":
     mainApp().run()
+################## END ##################
