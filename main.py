@@ -1,4 +1,4 @@
-# Add sound to mouse click
+# Snake Game in python using kivy for mobile & desktop
 # Developer: Mohammad Ali Bazzazi (me)
 
 print("""
