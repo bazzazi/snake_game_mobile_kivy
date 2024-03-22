@@ -1,4 +1,4 @@
-# Library Project :books:
+# Snake Game 🐍
 Hi everybody :wave:
 
 Hope you doing well :blush:
