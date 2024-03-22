@@ -26,7 +26,7 @@ sudo apt install python3-pip
 
 ## Screenshots 📷:
 
-<img src="images/sample.gif" width='250px' style="border:1px solid black">
+<img src="images/sample.gif" width='250px' style="border:2px solid black">
 
 
 ## Contact Developer :link:
